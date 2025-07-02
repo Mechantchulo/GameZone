@@ -1,7 +1,16 @@
 //create a Message component using Function based declaration
 
 function Message (){
-    return <h1>Hello World</h1>;
+    const name = 'Erick';
+    if (name){
+        return(
+            <div>Hello {name}</div>
+        )
+    }else{
+        return(
+            <div>Hello world</div>
+        )
+    }
 }
 
 export default Message;
