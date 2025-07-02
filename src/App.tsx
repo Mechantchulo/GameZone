@@ -1,8 +1,8 @@
 import "./App.css";
-import ListGroup from "./components/ListGroup";
+//import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 function App() {
-  const items = ["Nairobi", "Mombasa", "Emali", "Makueni", "Kisumu"];
+  //const items = ["Nairobi", "Mombasa", "Emali", "Makueni", "Kisumu"];
   /*   const handleSelectedItem = (item: string) => {
     console.log(item);
   }; */
@@ -14,7 +14,9 @@ function App() {
         onSelectItem={handleSelectedItem}
       /> */}
 
-      <Alert />
+      <Alert>
+        hey there <span> ERICK </span>
+      </Alert>
     </div>
   );
 }
