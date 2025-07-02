@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ListGroup from './components/ListGroup'
-function App (){
-  return(
+import "./App.css";
+import ListGroup from "./components/ListGroup";
+function App() {
+  let items = ["Nairobi", "Mombasa", "Emali", "Makueni", "Kisumu"];
+  const handleSelectedItem = (item: string) => {
+    console.log(item);
+  };
+  return (
     <div>
-      <ListGroup />
+      <ListGroup
+        items={items}
+        heading="Cities"
+        onSelectItem={handleSelectedItem}
+      />
     </div>
-  )
+  );
 }
 
 export default App;
