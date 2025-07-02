@@ -1,5 +1,6 @@
 import "./App.css";
 import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
 function App() {
   const items = ["Nairobi", "Mombasa", "Emali", "Makueni", "Kisumu"];
   const handleSelectedItem = (item: string) => {
@@ -7,11 +8,13 @@ function App() {
   };
   return (
     <div>
-      <ListGroup
+      {/*       <ListGroup
         items={items}
         heading="Cities"
         onSelectItem={handleSelectedItem}
-      />
+      /> */}
+
+      <Alert />
     </div>
   );
 }
