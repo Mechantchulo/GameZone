@@ -1,7 +1,7 @@
 import "./App.css";
 import ListGroup from "./components/ListGroup";
 function App() {
-  let items = ["Nairobi", "Mombasa", "Emali", "Makueni", "Kisumu"];
+  const items = ["Nairobi", "Mombasa", "Emali", "Makueni", "Kisumu"];
   const handleSelectedItem = (item: string) => {
     console.log(item);
   };
